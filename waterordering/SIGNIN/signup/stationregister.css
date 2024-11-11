@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap');
+
+* {
+   font-family: 'Fredoka', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-block-end: 60px;
+}
+
+.container .content {
+   text-align: center;
+}
+
+.form-container {
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+   align-items: center;
+   min-height: 100vh;
+   background: url('image/usertype.png') no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.form-container form {
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   background: rgba(255, 255, 255, 0.8); /* Semi-transparent for readability */
+   background-image: url('image/usertype1.png'); /* Background image */
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 1275px;
+   text-align: center;
+   width: 600px; /* Fixed width */
+   height: 84vh; /* Auto height to fit content */
+   position: relative;
+   z-index: 1;
+   padding-top: 30px; /* Added padding-top to push content down */
+}
+
+.form-container form h3 {
+   margin-block-start: 20px;
+   font-size: 30px;
+   text-transform: uppercase;
+   color: #003f67;
+   font-family: 'Fredoka', sans-serif;
+   margin-bottom: 65px;
+}
+
+.form-container form input {
+   inline-size: 100%;
+   padding: 10px 30px;
+   font-size: 17px;
+   font-weight: bold;
+   margin: 8px 0;
+   background: #c3e4ed;
+   border-radius: 30px;
+   height: 45px;
+   width: 300px; /* Fixed width */
+   font-family: 'Fredoka', sans-serif;
+}
+
+.form-container form .button-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+}
+
+.form-btn {
+   background: #c3e4ed;
+   color: #003f67;
+   padding: 8px 20px;
+   font-size: 16px;
+   font-weight: bold;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   transition: background 0.3s ease;
+   width: 50%;
+   height: 40px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Fredoka', sans-serif;
+}
+
+.form-btn:hover {
+   background: #0093c1;
+}
+
+.form-container form p {
+   margin-block-start: 10px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #333;
+   font-family: 'Fredoka', sans-serif;
+}
+
+.form-container form p a {
+   color: crimson;
+}
+
+.form-container form .error-msg {
+   margin: 10px 0;
+   display: block;
+   background: crimson;
+   color: #fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding: 10px;
+   font-family: 'Fredoka', sans-serif;
+}
